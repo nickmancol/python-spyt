@@ -1,0 +1,48 @@
+Searches for most relevant video on Youtube for each top 50 songs in Spotify
+---
+tags:
+  - sample, spotify, youtube
+consumes:
+  - application/json
+produces:
+  - application/json
+parameters:
+  - name: num
+    in: query
+    description: Number of songs to find
+    minimum: 1
+    minimum: 25
+    default: 10
+  - name: playlist
+    in: query
+    description: Spotify playlist id to find 
+    default: 37i9dQZEVXbMDoHDwVN2tF
+responses:
+  "200":
+    description: Returns a list of songs/videos (spyt)
+    schema:
+      type: array
+      items:
+        $ref: '#/definitions/spyt'
+definitions:
+  spyt:
+    type: object
+    properties:
+      artist:
+        type: string
+        description: Name of the artist
+      title:
+        type: string
+        description: Song title
+      video:
+        type: object
+        properties:
+          id:
+            type: string
+            description: Youtube video id
+          title:
+            type: string
+            description: Youtube video title
+          desc:
+            type: string
+            description: Youtube video description
