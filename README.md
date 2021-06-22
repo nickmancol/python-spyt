@@ -1,6 +1,6 @@
 # Sample microservice implementation
 
-![Flask](https://github.com/github/docs/actions/workflows/flask.yml/badge.svg)
+![Flask](https://github.com/nickmancol/python-spyt/actions/workflows/flask.yml/badge.svg)
 
 This microservice reads the Spotify top 50 global songs and search the most popular video associated with the song's title in Youtube. Implemented with Nameko framework over HTTP/REST.
 
