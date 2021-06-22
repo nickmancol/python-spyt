@@ -2,7 +2,7 @@
 
 ![Flask](https://github.com/nickmancol/python-spyt/actions/workflows/flask.yml/badge.svg)
 
-This microservice reads the Spotify top 50 global songs and search the most popular video associated with the song's title in Youtube. Implemented with Nameko framework over HTTP/REST.
+This microservice reads the Spotify top 50 global songs and search the most popular video associated with the song's title in Youtube. Implemented with Flask framework over HTTP/REST.
 
 ## Installing depedencies
 
