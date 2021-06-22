@@ -20,6 +20,13 @@ SPOTIPY_CLIENT_ID=XXX
 SPOTIPY_CLIENT_SECRET=XXX
 PLAYLIST_ID=37i9dQZEVXbMDoHDwVN2t
 ```
+
+## Testing
+
+```
+python -m pytest
+```
+
 ## Running 
 
 ```
